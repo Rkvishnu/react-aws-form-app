@@ -1,6 +1,6 @@
- # Cloud Collections
+ # About
 
-Cloud Collections is a single-page web application built using React, AWS Lambda, API Gateway, SQS, and RDS. It allows users to submit their information, which is then stored in a RDS database for further processing.
+A single-page web application built using React, AWS Lambda, API Gateway, SQS, and RDS. It allows users to submit their information, which is then stored in a RDS database for further processing.
 
 ## Features
 
