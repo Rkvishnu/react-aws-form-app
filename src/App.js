@@ -10,6 +10,7 @@ function App() {
     email: '',
     location: ''
   });
+  
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,7 +30,8 @@ function App() {
       .then(response => response.json())
       .then(data => {
         console.log('Form submission response:', data);
-        // Reset the form after successful submission
+
+        // Reset the form once after successful submission
         setFormData({
           name: '',
           email: '',
@@ -37,7 +39,7 @@ function App() {
         });
       })
       .catch(error => {
-        console.error('Error submitting form:', error);
+        console.log('Error submitting form:', error.message);
       });
   };
 
@@ -56,7 +58,7 @@ function App() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              required
+              required                                                    
             />
           </div>
 
